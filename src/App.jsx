@@ -1,18 +1,24 @@
-import { Suspense, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { Suspense } from 'react'
 import './App.css'
 import SimpleReactForm from './Components/SimpleReactForm/SimpleReactForm'
+import FormActions from './Components/FormAction/FormActions'
+import ControlledField from './Components/ControlledField/ControlledField'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <h1>Explore React Form</h1>
-      <Suspense fallback={<span>Loading...</span>}>
+      <Suspense fallback={<span>Loading..</span>}>
+        <h3>Simple React From</h3>
         <SimpleReactForm></SimpleReactForm>
+      </Suspense>
+      <Suspense fallback={<span>Loading..</span>}>
+        <h3>Form Action</h3>
+        <FormActions></FormActions>
+      </Suspense>
+      <Suspense fallback={<span>Loading..</span>}>
+        <h3>Controlled From</h3>
+        <ControlledField></ControlledField>
       </Suspense>
     </>
   )
