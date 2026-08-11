@@ -4,6 +4,7 @@ import SimpleReactForm from './Components/SimpleReactForm/SimpleReactForm'
 import FormActions from './Components/FormAction/FormActions'
 import ControlledField from './Components/ControlledField/ControlledField'
 import UncontrolledField from './Components/UncontrolledField/UncontrolledField'
+import HooksForm from './Components/HooksForm/HooksForm'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
       <Suspense fallback={<span>Loading..</span>}>
         <h3>Uncontrolled From</h3>
         <UncontrolledField></UncontrolledField>
+      </Suspense>
+      <Suspense fallback={<span>Loading..</span>}>
+        <h3>Hooks From</h3>
+        <HooksForm></HooksForm>
       </Suspense>
     </>
   )
