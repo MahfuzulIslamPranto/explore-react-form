@@ -5,6 +5,7 @@ import FormActions from './Components/FormAction/FormActions'
 import ControlledField from './Components/ControlledField/ControlledField'
 import UncontrolledField from './Components/UncontrolledField/UncontrolledField'
 import HooksForm from './Components/HooksForm/HooksForm'
+import ProductManagement from './Components/ProductManagement/ProductManagement'
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
       <Suspense fallback={<span>Loading..</span>}>
         <h3>Hooks From</h3>
         <HooksForm></HooksForm>
+      </Suspense>
+      <Suspense fallback={<span>Loading..</span>}>
+        <h3>Product Management</h3>
+        <ProductManagement></ProductManagement>
       </Suspense>
     </>
   )
