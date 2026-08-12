@@ -6,7 +6,7 @@ import Aunt from './Aunt';
 const Grandpa = () => {
     return (
         <div >
-            <h1 className='familyTree'>Grandpa</h1>
+            <h1>Grandpa</h1>
             <div className='flex'>
                 <Dad></Dad>
                 <Uncle></Uncle>
